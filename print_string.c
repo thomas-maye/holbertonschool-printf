@@ -5,4 +5,4 @@
  *
  *
  */
-void print_string(va_list s)
+int print_string(va_list args)
