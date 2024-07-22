@@ -6,6 +6,6 @@
  * Return : void so nothing
  */
 
-void print_char(va_list c)
+int print_char(va_list c)
 {
 }
