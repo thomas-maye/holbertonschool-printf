@@ -14,13 +14,14 @@ int get_format(char type, va_list arg);
 
 /**
  * struct selector - struct to select format and the function
- * @type: format specifier
+ * @form_imp: format specifier
  * @function: the function with the format specifier
  */
+
 typedef struct selector
 {
-	char type;
+	char form_imp;
 	int (*function)(va_list);
-} selector;
+} selector_t;
 
 #endif

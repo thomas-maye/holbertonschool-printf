@@ -5,7 +5,7 @@
 /**
  * get_format - get the selector
  * @type: to selector
- * @arg: the list of argument
+ * @args: the list of argument
  * Return: the number of the caracter printed
  */
 
@@ -13,16 +13,16 @@ int get_format(char type, va_list args)
 {
 	int i = 0;
 
-	selector id[] = {
+	selector_t id[] = {
 		{'c', print_char},
 		{'s', print_string},
 		{'%', print_percent},
 		{'\0', NULL}
 	};
 
-	while (id[i].type != '\0')
+	while (id[i].form_imp != '\0')
 	{
-		if (type == id[i].type)
+		if (type == id[i].form_imp)
 		{
 			return (id[i].function(args));
 		}
