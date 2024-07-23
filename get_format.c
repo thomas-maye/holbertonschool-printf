@@ -9,7 +9,7 @@
  * Return: the number of the caracter printed
  */
 
-int get_format(char type, va_list args)
+int (*get_format(char type))(va_list)
 {
 	int i = 0;
 
@@ -24,7 +24,7 @@ int get_format(char type, va_list args)
 	{
 		if (type == id[i].form_imp)
 		{
-			return (id[i].function(args));
+			return (id[i].function);
 		}
 		i++;
 	}

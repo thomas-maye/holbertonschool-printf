@@ -27,7 +27,12 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + 1] != '\0')
 			{
-				length = length + get_format(format[i + 1], args);
+				int (*func)(va_list) = get_format(format[i + 1]);
+
+				if (func != NULL)
+				{
+					length += func(args);
+				}
 				i++;
 			}
 			else
