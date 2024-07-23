@@ -19,6 +19,7 @@ int print_string(va_list args)
 		str[3] = ('l');
 		str[4] = ('l');
 		str[5] = (')');
+		str[6] = ('\0');
 	}
 
 	while (str[i] != '\0')
