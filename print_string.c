@@ -14,7 +14,6 @@ int print_string(va_list args)
 	if (str == NULL)
 	{
 		str = "(null)";
-		return (6);
 	}
 
 	while (str[i] != '\0')
