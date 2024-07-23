@@ -5,7 +5,6 @@
 /**
  * get_format - get the selector
  * @type: to selector
- * @args: the list of argument
  * Return: the number of the caracter printed
  */
 
