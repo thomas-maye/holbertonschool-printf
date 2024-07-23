@@ -28,5 +28,5 @@ int get_format(char type, va_list args)
 		}
 		i++;
 	}
-	return (2);
+	return (0);
 }

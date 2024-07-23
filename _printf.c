@@ -14,19 +14,26 @@ int _printf(const char *format, ...)
 	int i = 0;
 	va_list args;
 
-
-	va_start(args, format);
-
 	if (format == NULL)
 	{
 		return (-1);
 	}
-	while (format[i] != '\0' && format != NULL)
+
+	va_start(args, format);
+
+	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
-			length = length + get_format(format[i + 1], args);
-			i++;
+			if (format[i + 1] != '\0')
+			{
+				length = length + get_format(format[i + 1], args);
+				i++;
+			}
+			else
+			{
+				return (-1);
+			}
 		}
 		else
 		{
