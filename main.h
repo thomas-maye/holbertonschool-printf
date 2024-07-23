@@ -10,6 +10,7 @@ int print_char(va_list args);
 int print_string(va_list args);
 int print_percent(va_list args);
 int _printf(const char *format, ...);
+int get_format(char type, va_list arg);
 
 /**
  * struct selector - struct to select format and the function
@@ -19,7 +20,7 @@ int _printf(const char *format, ...);
 typedef struct selector
 {
 	char type;
-	void (*function)(va_list);
+	int (*function)(va_list);
 } selector;
 
 #endif
