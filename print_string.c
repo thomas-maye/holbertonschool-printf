@@ -13,12 +13,12 @@ int print_string(va_list args)
 
 	if (str == NULL)
 	{
-		str[1] = ('(');
-		str[2] = ('n');
-		str[3] = ('u');
+		str[0] = ('(');
+		str[1] = ('n');
+		str[2] = ('u');
+		str[3] = ('l');
 		str[4] = ('l');
-		str[5] = ('l');
-		str[6] = (')');
+		str[5] = (')');
 	}
 
 	while (str[i] != '\0')
