@@ -10,34 +10,34 @@
 
 int _printf(const char *format, ...)
 {
-	int length = 0;
-	int i = 0;
+	int i = 0, length = 0;
 	va_list args;
+	int (*f)(va_list);
 
 	if (format == NULL)
-	{
 		return (-1);
-	}
 
 	va_start(args, format);
 
-	while (format[i] != '\0')
+	while (format[i] != '\0' && format != NULL)
 	{
 		if (format[i] == '%')
 		{
-			if (format[i + 1] != '\0')
-			{
-				int (*func)(va_list) = get_format(format[i + 1]);
+			i++;
+			if (format[i] == '\0')
+				return (-1);
 
-				if (func != NULL)
-				{
-					length += func(args);
-				}
-				i++;
+			f = get_format(format[i]);
+
+			if (f != NULL)
+			{
+				length = length + f(args);
 			}
 			else
 			{
-				return (-1);
+				_putchar('%');
+				_putchar(format[i]);
+				length = length + 2;
 			}
 		}
 		else
