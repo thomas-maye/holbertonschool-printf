@@ -26,9 +26,9 @@ int print_integer(va_list args)
 	}
 	if (n2 / 10)
 	{
-		j += print_integer(args);
+		j += print_integer((va_list)&n2 / 10);
 	}
-	_putchar(n2 % 10);
+	_putchar((n2 % 10) + '\0');
 	j++;
 
 	return (j);
