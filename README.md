@@ -13,18 +13,18 @@ then it processes the format string and outputs the string(s) with the right for
 
 int _printf(const char *format, ...);
 
-#Parameters
+##Parameters
 
 format : is a pointer to a string that contains the text we want to print to the standard outpout.
 
 ... : A variable number of arguments that will be printed according to the format specifiers.
 
-#Return Value
+##Return Value
 
 The function returns the number of characters printed, excluding the null character '\0'
 if the format of the string is 'NULL', the function returns '-1'
 
-#Format Specifers Suported by '_printf':
+##Format Specifers Suported by '_printf':
 
 The function '_printf' supports theses format specifiers:
 
@@ -34,7 +34,7 @@ The function '_printf' supports theses format specifiers:
 
 %% : Prints a percent sign.
 
-#Files
+##Files
 
 _printf.c : The main implementation of the '_printf' function.
 
@@ -50,7 +50,7 @@ _putchar.c : Function that write a character to standard output.
 
 main.h : The header file containing all the function prototypes and the struct 'selector'. 
 
-#Error Handling
+##Error Handling
 
 if the format string is 'NULL' , the function returns '-1'.
 
