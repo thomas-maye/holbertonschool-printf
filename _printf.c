@@ -19,18 +19,19 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 
-	while (format[i] != '\0' && format == NULL)
+	while (format[i] != '\0' && format != NULL)
 	{
 		if (format[i] == '%')
 		{
 			i++;
-			if (format == NULL)
+			if (format[i] == '\0')
 			{
 				return (-1);
 			}
 
 			f = get_format(format[i]);
-			if (f == NULL)
+
+			if (f != NULL)
 			{
 				length = length + f(args);
 			}
