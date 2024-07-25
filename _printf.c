@@ -33,7 +33,11 @@ int _printf(const char *format, ...)
 			{
 				count = count + f(args);
 			}
-				
+			else
+			{
+				_putchar(format[i]);
+				count = count + 2;
+			}
 		}
 		else
 		{
