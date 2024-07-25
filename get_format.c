@@ -29,9 +29,6 @@ int (*get_format(char type))(va_list)
 		}
 		i++;
 	}
-	
-	_putchar('%');
-	_putchar(type);
-	
+
 	return (0);
 }
