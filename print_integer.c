@@ -8,8 +8,8 @@
 
 int print_integer(va_list args)
 {
-	int n = va_arg(args, int);
-	int num;
+	long int n = va_arg(args, int);
+	long int num;
 	int count = 0;
 	int divisor = 1;
 
