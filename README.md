@@ -9,13 +9,13 @@ then it processes the format string and outputs the string(s) with the right for
 
 ## Command ofcompilation
 
-> $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+`$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.`
 
 ## Function Prototype
 
-int _printf(const char *format, ...);
+`int _printf(const char *format, ...);`
 
-## Parameters
+### Parameters
 
 format : is a pointer to a string that contains the text we want to print to the standard outpout.
 
@@ -30,27 +30,27 @@ if the format of the string is 'NULL', the function returns '-1'
 
 The function '_printf' supports theses format specifiers:
 
-%c : Prints a single character.
+**%c** : Prints a single character.
 
-%s : Prints a string of characters.
+**%s** : Prints a string of characters.
 
-%% : Prints a percent sign.
+**%%** : Prints a percent sign.
 
 ## Files
 
-_printf.c : The main implementation of the '_printf' function.
+**_printf.c** : The main implementation of the '_printf' function.
 
-print_string.c : A function to print a string.
+**print_string.c** : A function to print a string.
 
-print_char.c : A function to print a character.
+**print_char.c** : A function to print a character.
 
-print_percent : A function to print a percent sign.
+**print_percent** : A function to print a percent sign.
 
-get_format.c : A function to select the appropriate function for every format specifier.
+**get_format.c** : A function to select the appropriate function for every format specifier.
 
-_putchar.c : Function that write a character to standard output.
+**_putchar.c** : Function that write a character to standard output.
 
-main.h : The header file containing all the function prototypes and the struct 'selector'. 
+**main.h** : The header file containing all the function prototypes and the struct 'selector'. 
 
 ## Error Handling
 
