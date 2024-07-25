@@ -17,11 +17,11 @@ then it processes the format string and outputs the string(s) with the right for
 
 ### Parameters
 
-format : is a pointer to a string that contains the text we want to print to the standard outpout.
+`format`: is a pointer to a string that contains the text we want to print to the standard outpout.
 
-... : A variable number of arguments that will be printed according to the format specifiers.
+`...` : A variable number of arguments that will be printed according to the format specifiers.
 
-## Return Value
+### Return Value
 
 The function returns the number of characters printed, excluding the null character '\0'
 if the format of the string is 'NULL', the function returns '-1'
@@ -35,6 +35,10 @@ The function '_printf' supports theses format specifiers:
 **%s** : Prints a string of characters.
 
 **%%** : Prints a percent sign.
+
+**d** : Prints a .
+
+**i** : Prints a percent sign.
 
 ## Files
 
