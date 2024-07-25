@@ -1,6 +1,4 @@
-# holbertonschool-printf
-
-# Project _printf:
+# Project Holberton : C - printf
 
 ## Description
 
@@ -8,6 +6,10 @@ This project is a custom '_printf' function that will replicate some of the func
 function from the standard library.
 The '_printf' function takes a format of a string defined by 'get_format' function and a variable number of arguments
 then it processes the format string and outputs the string(s) with the right format.
+
+## Command ofcompilation
+
+> $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 ## Function Prototype
 
