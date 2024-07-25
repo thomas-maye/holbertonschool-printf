@@ -7,9 +7,15 @@ function from the standard library.
 The '_printf' function takes a format of a string defined by 'get_format' function and a variable number of arguments
 then it processes the format string and outputs the string(s) with the right format.
 
-## Command ofcompilation
+## Command of compilation
+
+The compilation command to compile the files that make up the printf function is as follows :
 
 `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.`
+
+## Requirements
+
+
 
 ## Function Prototype
 
@@ -36,9 +42,9 @@ The function '_printf' supports theses format specifiers:
 
 **%%** : Prints a percent sign.
 
-**d** : Prints a .
+**%d** : Prints a .
 
-**i** : Prints a percent sign.
+**%i** : Prints a percent sign.
 
 ## Files
 
@@ -58,8 +64,10 @@ The function '_printf' supports theses format specifiers:
 
 ## Error Handling
 
-if the format string is 'NULL' , the function returns '-1'.
+If the format string is 'NULL' , the function returns '-1'.
 
-if a forma specifier is not recognized, the function wil continue to process next characters.
+If a forma specifier is not recognized, the function wil continue to process next characters.
 
-if an incomplete formate specifier is found the function returns '-1'
+If an incomplete formate specifier is found the function returns '-1'
+
+(https://github.com/thomas-maye/holbertonschool-printf/blob/main/README.md)
