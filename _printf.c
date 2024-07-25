@@ -10,7 +10,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i = 0, length = 0;
+	int i = 0, count = 0;
 	va_list args;
 	int (*f)(va_list);
 
@@ -31,22 +31,22 @@ int _printf(const char *format, ...)
 
 			if (f != NULL)
 			{
-				length = length + f(args);
+				count = count + f(args);
 			}
 			else
 			{
 				_putchar('%');
 				_putchar(format[i]);
-				length = length + 2;
+				count = count + 2;
 			}
 		}
 		else
 		{
 			_putchar(format[i]);
-			length++;
+			count++;
 		}
 		i++;
 	}
 	va_end(args);
-	return (length);
+	return (count);
 }
