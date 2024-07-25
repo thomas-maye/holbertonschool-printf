@@ -8,34 +8,34 @@
 
 int print_integer(va_list args)
 {
-	long int n1 = va_arg(args, int);
-	int j = 0;
-	long int div = 1;
+	int n = va_arg(args, int);
+	unsigned int num;
+	int count = 0;
+	unsigned int divisor = 1;
 
-	va_arg(args, int);
-
-	if (n1 < 0)
+	if (n < 0)
 	{
-		_putchar('-');
-		n1 = -n1;
-		j++;
+		count += _putchar('-');
+		num = -n; /** Convert to unsigned to handle the absolute value */
+	}
+	else
+	{
+		num = n;
 	}
 
-	if (n1 < 10)
-		return (j += _putchar(n1 + '0'));
-
-	while (n1 / div > 9 || n1 / div < -9)
+	/** Find the divisor to extract each digit */
+	while (num / divisor >= 10)
 	{
-		div = div * 10;
+		divisor *= 10;
 	}
 
-	while (div != 0)
+	/** Extract and print each digit */
+	while (divisor != 0)
 	{
-		_putchar('0' + n1 / div);
-		n1 = n1 % div;
-		div = div / 10;
-		j++;
+		count += _putchar((num / divisor) + '0');
+		num %= divisor;
+		divisor /= 10;
 	}
 
-	return (j);
+	return (count);
 }
