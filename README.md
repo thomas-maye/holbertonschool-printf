@@ -70,4 +70,4 @@ If a forma specifier is not recognized, the function wil continue to process nex
 
 If an incomplete formate specifier is found the function returns '-1'
 
-(https://github.com/thomas-maye/holbertonschool-printf/blob/main/README.md)
+![_printf_flow_chart](https://github.com/thomas-maye/holbertonschool-printf/blob/29702fff29ff52cfa193d2584e130135fbeb1a33/FlowChart%20_printf.c.drawio)
