@@ -9,14 +9,14 @@
 int print_integer(va_list args)
 {
 	int n = va_arg(args, int);
-	unsigned int num;
+	int num;
 	int count = 0;
-	unsigned int divisor = 1;
+	int divisor = 1;
 
 	if (n < 0)
 	{
 		count += _putchar('-');
-		num = -n; /** Convert to unsigned to handle the absolute value */
+		num = -n;
 	}
 	else
 	{
