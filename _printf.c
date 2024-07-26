@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	int i = 0, count = 0;
 	va_list args;
-	int (*f)(va_list);
+	int (*function_format)(va_list);
 
 	if (format == NULL)
 		return (-1);
@@ -27,11 +27,11 @@ int _printf(const char *format, ...)
 			if (format[i] == '\0')
 				return (-1);
 
-			f = get_format(format[i]);
+			function_format = get_format(format[i]);
 
-			if (f != NULL)
+			if (function_format != NULL)
 			{
-				count = count + f(args);
+				count = count + function_format(args);
 			}
 			else
 			{
