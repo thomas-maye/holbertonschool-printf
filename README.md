@@ -4,7 +4,7 @@
 
 ## Description 📄
 
-This project is a custom '_printf' function that will replicate some of the functionalities of the 'printf'
+> This project is a custom '_printf' function that will replicate some of the functionalities of the 'printf'
 function from the standard library.
 The '_printf' function takes a format of a string defined by 'get_format' function and a variable number of arguments
 then it processes the format string and outputs the string(s) with the right format.
@@ -45,11 +45,11 @@ The function '_printf' supports theses format specifiers:
 
 | Selector  |         Description           |
 |:---------:|:-----------------------------:|
-|  **%c**   |   Print a single character    |
-|  **%s**   |  Print a string of character  |
-|  **%%**   |  Print a percent character    |
-|  **%d**   |    Print a decimal number     |
-|  **%i**   |   Print an integer number     |
+|  **%c**   |Print a single character       |
+|  **%s**   |Print a string of character    |
+|  **%%**   |Print a percent character      |
+|  **%d**   |Print a decimal number         |
+|  **%i**   |Print an integer number        |
 
 ##Files
 
@@ -77,7 +77,7 @@ The header file containing all the function prototypes and the struct 'selector'
 ### main.c
 This is the test function. This will allow us to see if our function executes correctly. Here's an example :
 
-```
+```c
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
