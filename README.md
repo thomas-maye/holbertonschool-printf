@@ -134,6 +134,6 @@ If an incomplete formate specifier is found the function returns '-1'
 ## FlowChart 📊
 ![FlowChart _printf c drawio](https://github.com/user-attachments/assets/3df8c7de-a100-4562-9e13-c0e52e209418)
 
-## Autors 👨🏻‍💻👨🏻‍💻
+## Authors 👨🏻‍💻👨🏻‍💻
 Antoine LAFITTE & Thomas MAYE
 
