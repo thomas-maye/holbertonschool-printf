@@ -1,3 +1,4 @@
+![instagram_feed180](https://github.com/user-attachments/assets/6ee6244d-5e42-4ec7-9122-8d086b28f423)
 # Project Holberton : C - printf
 
 ## Description
@@ -67,3 +68,9 @@ If the format string is 'NULL' , the function returns '-1'.
 If a forma specifier is not recognized, the function wil continue to process next characters.
 
 If an incomplete formate specifier is found the function returns '-1'
+<<<<<<< HEAD
+=======
+
+![FlowChart _printf c drawio](https://github.com/user-attachments/assets/155a90fe-9e0b-4d04-94ac-d407f000055f)
+
+>>>>>>> 80fa4273b2f70ce3a3d654d3f8e0095e775d00b3
