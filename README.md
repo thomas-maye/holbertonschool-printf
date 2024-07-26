@@ -4,6 +4,7 @@
 
 ## Description 📄
 
+> [!NOTE]
 > This project is a custom '_printf' function that will replicate some of the functionalities of the 'printf'
 function from the standard library.
 The '_printf' function takes a format of a string defined by 'get_format' function and a variable number of arguments
@@ -24,24 +25,24 @@ The compilation command to compile the files that make up the printf function is
 - [x] We have no more than five functions per file
 - [x] All function prototypes can be found in main.h
 
-## Function Prototype 📁
+## Function Prototype 🤖
 
 `int _printf(const char *format, ...);`
 
-##Parameters
+## Parameters ⚙️
 
 `format` : is a pointer to a string that contains the text we want to print to the standard outpout.
 
 `...` : A variable number of arguments that will be printed according to the format specifiers.
 
-## Return Value
+## Return Value ⏎
 
 The function returns the number of characters printed, excluding the null character '\0'
-if the format of the string is 'NULL', the function returns '-1'
+if the format of the string is 'NULL', the function returns '-1'.
 
 ## Format Specifers Suported by '_printf':
 
-The function '_printf' supports theses format specifiers:
+The function '_printf' supports theses format specifiers :
 
 | Selector  |         Description           |
 |:---------:|:-----------------------------:|
@@ -51,31 +52,34 @@ The function '_printf' supports theses format specifiers:
 |  **%d**   |Print a decimal number         |
 |  **%i**   |Print an integer number        |
 
-##Files
+## Files 📁
 
-### _printf.c 
-The main implementation of the '_printf' function.
+- **_printf.c :**
+  
+*The main implementation of the '_printf' function.*
 
-### print_string.c
-A function to print a string with the prototype `int print_string(va_list args)`
+- **print_string.c :**
 
-### print_char.c
-A function to print a character with the prototype `int print_char(va_list args)`
+*A function to print a string with the prototype* `int print_string(va_list args)`
 
-### print_percent
-A function to print a percent sign with the prototype `int print_percent(va_list args)`
+- **print_char.c :**
 
-### get_format.c 
-A function to select the appropriate function for every format specifier with the prototype `int (*get_format(char type))(va_list)`
+*A function to print a character with the prototype* `int print_char(va_list args)`
 
-### _putchar.c
-A function that write a character to standard output with the prototype `int _putchar(char c)`
+- **print_percent :**
+*A function to print a percent sign with the prototype* `int print_percent(va_list args)`
 
-### main.h
-The header file containing all the function prototypes and the struct 'selector'. 
+- **get_format.c :**
+*A function to select the appropriate function for every format specifier with the prototype* `int (*get_format(char type))(va_list)`
 
-### main.c
-This is the test function. This will allow us to see if our function executes correctly. Here's an example :
+- **_putchar.c :**
+*A function that write a character to standard output with the prototype* `int _putchar(char c)`
+
+- **main.h :**
+*The header file containing all the function prototypes and the struct 'selector'.* 
+
+- **main.c :**
+*This is the test function. This will allow us to see if our function executes correctly. Here's an example :*
 
 ```c
 #include <limits.h>
@@ -126,15 +130,15 @@ int main(void)
 
 ## Error Handling ❌
 
-if the format string is 'NULL' , the function returns '-1'.
-
+> [!IMPORTANT]
+> If the format string is 'NULL' , the function returns '-1'.
 If a forma specifier is not recognized, the function wil continue to process next characters.
-
 If an incomplete formate specifier is found the function returns '-1'
 
 ## FlowChart 📊
-![FlowChart _printf c drawio](https://github.com/user-attachments/assets/3df8c7de-a100-4562-9e13-c0e52e209418)
+![FlowChart _printf c drawio](https://github.com/user-attachments/assets/e0423545-7441-4be2-aa6b-93c1ce3507cb)
 
 ## Authors 👨🏻‍💻👨🏻‍💻
+> [!TIP]
 > C#24 : Antoine LAFITTE & Thomas MAYE
 
