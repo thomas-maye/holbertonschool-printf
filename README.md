@@ -140,5 +140,5 @@ If an incomplete formate specifier is found the function returns '-1'
 
 ## Authors 👨🏻‍💻👨🏻‍💻
 > [!TIP]
-> C#24 : Antoine LAFITTE & Thomas MAYE
+> C#24 : [Antoine LAFITTE](https://github.com/AntoineLAFITTE) & [Thomas MAYE](https://github.com/thomas-maye)
 
