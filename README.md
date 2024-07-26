@@ -36,10 +36,10 @@ if the format of the string is 'NULL', the function returns '-1'
 
 The function '_printf' supports theses format specifiers:
 
-| Selector  |                               |
+| Selector  |         Description           |
 |:---------:|:-----------------------------:|
 |  **%c**   |   Print a single character    |
-|  **%s**   | Print a string of character   |
+|  **%s**   |  Print a string of character  |
 |  **%%**   |  Print a percent character    |
 |  **%d**   |    Print a decimal number     |
 |  **%i**   |   Print an integer number     |
@@ -56,7 +56,7 @@ The function '_printf' supports theses format specifiers:
 
 **get_format.c** : A function to select the appropriate function for every format specifier.
 
-**_putchar.c** : Function that write a character to standard output.
+**_putchar.c** : A function that write a character to standard output.
 
 **main.h** : The header file containing all the function prototypes and the struct 'selector'. 
 
@@ -67,5 +67,3 @@ If the format string is 'NULL' , the function returns '-1'.
 If a forma specifier is not recognized, the function wil continue to process next characters.
 
 If an incomplete formate specifier is found the function returns '-1'
-
-![_printf_flow_chart](https://github.com/thomas-maye/holbertonschool-printf/blob/29702fff29ff52cfa193d2584e130135fbeb1a33/FlowChart%20_printf.c.drawio)
