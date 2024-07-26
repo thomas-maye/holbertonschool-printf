@@ -36,25 +36,13 @@ if the format of the string is 'NULL', the function returns '-1'
 
 The function '_printf' supports theses format specifiers:
 
-|       |                               |
-|:-----:|:-----------------------------:|
-|**%c** | Print a single character      |
-|       |                               |
-|       |                               |
-|       |                               |
-|       |                               |
-|       |                               |
-|       |                               |
-|
-|**%c** : Prints a single character.
-|
-|**%s** : Prints a string of characters.
-|
-|**%%** : Prints a percent sign.
-|
-|**%d** : Prints a .
-|
-|**%i** : Prints a percent sign.
+| Selector  |                               |
+|:---------:|:-----------------------------:|
+|  **%c**   |   Print a single character    |
+|  **%s**   | Print a string of character   |
+|  **%%**   |  Print a percent character    |
+|  **%d**   |    Print a decimal number     |
+|  **%i**   |   Print an integer number     |
 
 ## Files
 
