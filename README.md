@@ -28,18 +28,18 @@ The compilation command to compile the files that make up the printf function is
 
 `int _printf(const char *format, ...);`
 
-### Parameters ⚙️
+##Parameters
 
-`format`: is a pointer to a string that contains the text we want to print to the standard outpout.
+`format` : is a pointer to a string that contains the text we want to print to the standard outpout.
 
 `...` : A variable number of arguments that will be printed according to the format specifiers.
 
-## Return Value ⏎
+## Return Value
 
 The function returns the number of characters printed, excluding the null character '\0'
 if the format of the string is 'NULL', the function returns '-1'
 
-## Format Specifers Suported by '_printf': ⛓️
+## Format Specifers Suported by '_printf':
 
 The function '_printf' supports theses format specifiers:
 
@@ -51,9 +51,9 @@ The function '_printf' supports theses format specifiers:
 |  **%d**   |    Print a decimal number     |
 |  **%i**   |   Print an integer number     |
 
-## Files 🗄️
+##Files
 
-### _printf.c
+### _printf.c 
 The main implementation of the '_printf' function.
 
 ### print_string.c
@@ -126,7 +126,7 @@ int main(void)
 
 ## Error Handling ❌
 
-If the format string is 'NULL' , the function returns '-1'.
+if the format string is 'NULL' , the function returns '-1'.
 
 If a forma specifier is not recognized, the function wil continue to process next characters.
 
