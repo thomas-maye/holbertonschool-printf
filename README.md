@@ -16,7 +16,12 @@ The compilation command to compile the files that make up the printf function is
 
 ## Requirements
 
-
+- [x] Allowed editors : vi, vim, emacs
+- [x] Our files compile on Ubuntu 20.04 LTS
+- [x] Our code of respect Betty code Style and Betty Doc
+- [x] We don't use global variables
+- [x] We have no more than five functions per file
+- [x] All function prototypes can be found in main.h
 
 ## Function Prototype
 
@@ -28,7 +33,7 @@ The compilation command to compile the files that make up the printf function is
 
 `...` : A variable number of arguments that will be printed according to the format specifiers.
 
-### Return Value
+## Return Value
 
 The function returns the number of characters printed, excluding the null character '\0'
 if the format of the string is 'NULL', the function returns '-1'
@@ -47,19 +52,76 @@ The function '_printf' supports theses format specifiers:
 
 ## Files
 
-**_printf.c** : The main implementation of the '_printf' function.
+### _printf.c
+The main implementation of the '_printf' function.
 
-**print_string.c** : A function to print a string.
+### print_string.c
+A function to print a string with the prototype `int print_string(va_list args)`
 
-**print_char.c** : A function to print a character.
+### print_char.c
+A function to print a character with the prototype `int print_char(va_list args)`
 
-**print_percent** : A function to print a percent sign.
+### print_percent
+A function to print a percent sign with the prototype `int print_percent(va_list args)`
 
-**get_format.c** : A function to select the appropriate function for every format specifier.
+### get_format.c 
+A function to select the appropriate function for every format specifier with the prototype `int (*get_format(char type))(va_list)`
 
-**_putchar.c** : A function that write a character to standard output.
+### _putchar.c
+A function that write a character to standard output with the prototype `int _putchar(char c)`
 
-**main.h** : The header file containing all the function prototypes and the struct 'selector'. 
+### main.h
+The header file containing all the function prototypes and the struct 'selector'. 
+
+### main.c
+This is the test function. This will allow us to see if our function executes correctly. Here's an example :
+
+```
+#include <limits.h>
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    int len;
+    int len2;
+    unsigned int ui;
+    void *addr;
+
+    len = _printf("Let's try to printf a simple sentence.\n");
+    len2 = printf("Let's try to printf a simple sentence.\n");
+    ui = (unsigned int)INT_MAX + 1024;
+    addr = (void *)0x7ffe637541f0;
+    _printf("Length:[%d, %i]\n", len, len);
+    printf("Length:[%d, %i]\n", len2, len2);
+    _printf("Negative:[%d]\n", -762534);
+    printf("Negative:[%d]\n", -762534);
+    _printf("Unsigned:[%u]\n", ui);
+    printf("Unsigned:[%u]\n", ui);
+    _printf("Unsigned octal:[%o]\n", ui);
+    printf("Unsigned octal:[%o]\n", ui);
+    _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    _printf("Character:[%c]\n", 'H');
+    printf("Character:[%c]\n", 'H');
+    _printf("String:[%s]\n", "I am a string !");
+    printf("String:[%s]\n", "I am a string !");
+    _printf("Address:[%p]\n", addr);
+    printf("Address:[%p]\n", addr);
+    len = _printf("Percent:[%%]\n");
+    len2 = printf("Percent:[%%]\n");
+    _printf("Len:[%d]\n", len);
+    printf("Len:[%d]\n", len2);
+    _printf("Unknown:[%r]\n");
+    printf("Unknown:[%r]\n");
+    return (0);
+}
+```
 
 ## Error Handling
 
@@ -68,9 +130,10 @@ If the format string is 'NULL' , the function returns '-1'.
 If a forma specifier is not recognized, the function wil continue to process next characters.
 
 If an incomplete formate specifier is found the function returns '-1'
-<<<<<<< HEAD
-=======
 
-![FlowChart _printf c drawio](https://github.com/user-attachments/assets/155a90fe-9e0b-4d04-94ac-d407f000055f)
+## FlowChart
+![FlowChart _printf c drawio](https://github.com/user-attachments/assets/3df8c7de-a100-4562-9e13-c0e52e209418)
 
->>>>>>> 80fa4273b2f70ce3a3d654d3f8e0095e775d00b3
+## Autors 
+Antoine LAFITTE & Thomas MAYE
+
