@@ -1,4 +1,5 @@
 ![instagram_feed180](https://github.com/user-attachments/assets/6ee6244d-5e42-4ec7-9122-8d086b28f423)
+
 # Project Holberton : C - printf
 
 ## Description 📄
@@ -135,5 +136,5 @@ If an incomplete formate specifier is found the function returns '-1'
 ![FlowChart _printf c drawio](https://github.com/user-attachments/assets/3df8c7de-a100-4562-9e13-c0e52e209418)
 
 ## Authors 👨🏻‍💻👨🏻‍💻
-Antoine LAFITTE & Thomas MAYE
+> C#24 : Antoine LAFITTE & Thomas MAYE
 
