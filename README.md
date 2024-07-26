@@ -1,20 +1,20 @@
 ![instagram_feed180](https://github.com/user-attachments/assets/6ee6244d-5e42-4ec7-9122-8d086b28f423)
 # Project Holberton : C - printf
 
-## Description
+## Description 📄
 
 This project is a custom '_printf' function that will replicate some of the functionalities of the 'printf'
 function from the standard library.
 The '_printf' function takes a format of a string defined by 'get_format' function and a variable number of arguments
 then it processes the format string and outputs the string(s) with the right format.
 
-## Command of compilation
+## Command of compilation 📥
 
 The compilation command to compile the files that make up the printf function is as follows :
 
 `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.`
 
-## Requirements
+## Requirements ✅
 
 - [x] Allowed editors : vi, vim, emacs
 - [x] Our files compile on Ubuntu 20.04 LTS
@@ -23,22 +23,22 @@ The compilation command to compile the files that make up the printf function is
 - [x] We have no more than five functions per file
 - [x] All function prototypes can be found in main.h
 
-## Function Prototype
+## Function Prototype 📁
 
 `int _printf(const char *format, ...);`
 
-### Parameters
+### Parameters ⚙️
 
 `format`: is a pointer to a string that contains the text we want to print to the standard outpout.
 
 `...` : A variable number of arguments that will be printed according to the format specifiers.
 
-## Return Value
+## Return Value ⏎
 
 The function returns the number of characters printed, excluding the null character '\0'
 if the format of the string is 'NULL', the function returns '-1'
 
-## Format Specifers Suported by '_printf':
+## Format Specifers Suported by '_printf': ⛓️
 
 The function '_printf' supports theses format specifiers:
 
@@ -50,7 +50,7 @@ The function '_printf' supports theses format specifiers:
 |  **%d**   |    Print a decimal number     |
 |  **%i**   |   Print an integer number     |
 
-## Files
+## Files 🗄️
 
 ### _printf.c
 The main implementation of the '_printf' function.
@@ -123,7 +123,7 @@ int main(void)
 }
 ```
 
-## Error Handling
+## Error Handling ❌
 
 If the format string is 'NULL' , the function returns '-1'.
 
@@ -131,9 +131,9 @@ If a forma specifier is not recognized, the function wil continue to process nex
 
 If an incomplete formate specifier is found the function returns '-1'
 
-## FlowChart
+## FlowChart 📊
 ![FlowChart _printf c drawio](https://github.com/user-attachments/assets/3df8c7de-a100-4562-9e13-c0e52e209418)
 
-## Autors 
+## Autors 👨🏻‍💻👨🏻‍💻
 Antoine LAFITTE & Thomas MAYE
 
