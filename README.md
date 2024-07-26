@@ -68,4 +68,5 @@ If a forma specifier is not recognized, the function wil continue to process nex
 
 If an incomplete formate specifier is found the function returns '-1'
 
-![_printf_flow_chart](https://github.com/thomas-maye/holbertonschool-printf/blob/29702fff29ff52cfa193d2584e130135fbeb1a33/FlowChart%20_printf.c.drawio)
+![FlowChart _printf c drawio](https://github.com/user-attachments/assets/155a90fe-9e0b-4d04-94ac-d407f000055f)
+
