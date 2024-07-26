@@ -70,7 +70,7 @@ Selects the right function based on the format specifier.
 .B }
 
 .SH AUTHOR
-Written by Antoine Lafitte and Thomas Mayet.
+Written by Antoine Lafitte and Thomas Mayé.
 
 .SH BUGS
 No known bugs.
